@@ -76,3 +76,17 @@ The Hive Metastore is just a metadata catalog—other tools (like Athena, Presto
 Data Catalog: tores metadata: table names, columns, partitions, file locations, etc.  - use to find where and how to queries data in s3.  
 Athena use catalog for metadata but it actually scan s3 for queries  
 you do not pay for data returned but you pay for data scanned  
+
+
+## Big Data Technologies Summary
+
+| Technology   | Type           | One-line Description                                   | Common Uses                        |
+|--------------|----------------|-------------------------------------------------------|-------------------------------------|
+| Hadoop       | Framework      | Distributed storage and batch processing of big data   | Batch ETL, data lakes               |
+| Spark        | Engine         | Fast, in-memory analytics and processing               | Real-time analytics, ML, ETL        |
+| Hive         | SQL Engine     | SQL-like queries on large datasets over Hadoop         | Data warehousing, batch analytics   |
+| Presto/Trino | SQL Engine     | Distributed, interactive SQL queries on big data       | Ad hoc analytics, federated queries |
+| HBase        | NoSQL Database | Scalable, distributed, real-time NoSQL database        | Time-series, random access storage  |
+| Parquet      | File Format    | Columnar storage format optimized for analytics        | Efficient storage, fast queries     |
+| Avro         | File Format    | Row-based storage format, good for streaming           | Data serialization, streaming       |
+| ORC          | File Format    | Columnar storage format, often used with Hive          | Data warehousing, analytics         |
