@@ -23,6 +23,8 @@ provisined throughput: LSI(same as base table) ; GSI(separete from base table)
 number allowed: LSI(5): GSI(20- can increase)  
 
 ## Type of key
-Partition Key - HASH
-Sort Key - Range Key
+Partition Key - HASH  
+Sort Key - Range Key  
 
+## Improve performance of your query by:
+compressing , partitioninng and converting into columnar format (like parquet)
