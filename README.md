@@ -93,3 +93,10 @@ you do not pay for data returned but you pay for data scanned
 
 ## AWS Data exchange  
 AWS Data Exchange is a fully managed AWS service that enables you to find, subscribe to, and use third-party data in the AWS Cloud. It acts as a marketplace for data products, allowing data providers to publish datasets and data subscribers to access and integrate those datasets directly into their AWS environment (typically delivered to Amazon S3).
+
+
+## Event Bride
+Event Bus - recieve and routes events (defaukt, custom and partner)
+Event source - event originate
+Rule - pattern that matches events
+Target - Destination (Dynamodb can not be the target)
