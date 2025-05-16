@@ -32,5 +32,8 @@ compressing , partitioninng and converting into columnar format (like parquet)
 ## Upto 10 Petebyte tranfer
 snowball edge: there is no way to put in glacier. You need to place in other place and move it to glacier.  
 
-# for lifecycle transition
+## for lifecycle transition
 you need to store for 30 days min
+
+## Formula to calculate the partition in dynamodb
+Number of partitions = max(ceil(Table size (GB) / 10), ceil(WCU / 1000), ceil(RCU / 3000))
