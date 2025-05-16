@@ -60,3 +60,17 @@ response = dynamodb.update_item(
 response = dynamodb.delete_item(
     TableName="Users", Key={"UserID": {"S": "12345"}, "Timestamp": {"N": "1234567890"}}
 )
+
+
+# Query the database
+response = dynamodb.query(
+    TableName="Users",
+    KeyConditionExpression="UserID = :uid AND Timestamp >= :ts",
+    ExpressionAttributeValues={
+        ":uid": {"S": "12345"},
+        ":ts": {"N": "1234560000"}
+    },
+    ProjectionExpression="Name"  # Only return the 'Name' attribute
+)
+for item in response["Items"]:
+    print(item)
