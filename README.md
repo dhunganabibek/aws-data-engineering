@@ -90,3 +90,6 @@ you do not pay for data returned but you pay for data scanned
 | Parquet      | File Format    | Columnar storage format optimized for analytics        | Efficient storage, fast queries     |
 | Avro         | File Format    | Row-based storage format, good for streaming           | Data serialization, streaming       |
 | ORC          | File Format    | Columnar storage format, often used with Hive          | Data warehousing, analytics         |
+
+## AWS Data exchange  
+AWS Data Exchange is a fully managed AWS service that enables you to find, subscribe to, and use third-party data in the AWS Cloud. It acts as a marketplace for data products, allowing data providers to publish datasets and data subscribers to access and integrate those datasets directly into their AWS environment (typically delivered to Amazon S3).
