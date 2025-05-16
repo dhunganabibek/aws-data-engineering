@@ -37,3 +37,9 @@ you need to store for 30 days min
 
 ## Formula to calculate the partition in dynamodb
 Number of partitions = max(ceil(Table size (GB) / 10), ceil(WCU / 1000), ceil(RCU / 3000))
+
+## Kinesis components
+Kinesis Data Streams (KDS): Real-time streaming of data (shards, producers, consumers).  
+Kinesis Data Firehose: Loads streaming data into S3, Redshift, Elasticsearch, or Splunk (no code, auto-scaling).  
+Kinesis Data Analytics: Real-time analytics on streaming data using SQL.  
+
