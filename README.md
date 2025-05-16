@@ -14,10 +14,14 @@ Data catalog - for defining strcuture of data.
 ## Cross account access to S3 data
 use bucket based policy or resouce based policy with specific account id
 
-# Diffrence between LSI and GSI
+## Difference between LSI and GSI
 Partition key - LSI(same) - GSI(can be different)  
 sort Key = both different  
 created time : LSI(during table creation) GSI(can be created/deleted any time)  
 consistency: LSI(string) ; GSI(eventually consistent- can be strong)  
 provisined throughput: LSI(same as base table) ; GSI(separete from base table)  
 number allowed: LSI(5): GSI(20- can increase)  
+
+## Type of key
+Partition Key - HASH
+Sort Key - Range Key
