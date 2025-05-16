@@ -48,3 +48,10 @@ can not be two source (data stream and  Kinesis Agent at a same time)
 
 ## s3 VPC gateway endpoint
 connect s3 to vpc with out public internet
+
+## Connect VPC to AWS services
+1. VPC gateway endpoint
+used by s3 and dynamodb  
+
+2. VPC Interface endpoint (AWS PrivateLink)
+used by other services by using elasctic network interface.  
