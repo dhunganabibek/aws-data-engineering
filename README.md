@@ -68,9 +68,11 @@ Open source data warehouse ystem built in top of Hadoop
 It allows you to query and manage large datasets stored in distributed storage using a SQL-like language called HiveQL. 
 Hive organize data into tables and partitions(folders) and store metadatas (like table schema and partition info in a metastore - which is a database)
 Hive can read data in many formats: text, CSV, JSON, Parquet, ORC, Avro, etc.
+It lets you run SQL-like queries (HiveQL) on large datasets stored in distributed storage (like HDFS or S3).
+Hive translates SQL queries into MapReduce, Tez, or Spark jobs to process data at scale.
 The Hive Metastore is just a metadata catalog—other tools (like Athena, Presto, Spark) can use it to understand how to read the data.
 
 ## AWS Athena
-Data Catalog: tores metadata: table names, columns, partitions, file locations, etc.  
+Data Catalog: tores metadata: table names, columns, partitions, file locations, etc.  - use to find where and how to queries data in s3.  
 Athena use catalog for metadata but it actually scan s3 for queries  
 you do not pay for data returned but you pay for data scanned  
