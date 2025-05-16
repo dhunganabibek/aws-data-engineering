@@ -43,3 +43,5 @@ Kinesis Data Streams (KDS): Real-time streaming of data (shards, producers, cons
 Kinesis Data Firehose: Loads streaming data into S3, Redshift, Elasticsearch, or Splunk (no code, auto-scaling).  
 Kinesis Data Analytics: Real-time analytics on streaming data using SQL.  
 
+## Kinesis Firehose - auto managed
+can not be two source (data stream and  Kinesis Agent at a same time)
