@@ -18,10 +18,11 @@ use bucket based policy or resouce based policy with specific account id
 Partition key - LSI(same) - GSI(can be different)  
 sort Key = both different  
 created time : LSI(during table creation) GSI(can be created/deleted any time)  
-consistency: LSI(string) ; GSI(eventually consistent- can be strong)  
+consistency: LSI(string) ; GSI(eventually consistent)  
 provisined throughput: LSI(same as base table) ; GSI(separete from base table)  
 number allowed: LSI(5): GSI(20- can increase)  
 
 ## Type of key
 Partition Key - HASH
 Sort Key - Range Key
+

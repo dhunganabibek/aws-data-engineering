@@ -74,3 +74,40 @@ response = dynamodb.query(
 )
 for item in response["Items"]:
     print(item)
+    
+# Prepare batch write requests (max 25 items per call)
+request_items = {
+    'Users': [
+        {
+            'PutRequest': {
+                'Item': {
+                    'UserID': {'S': 'user2'},
+                    'Timestamp': {'N': '1234567891'},
+                    'Name': {'S': 'Jane Doe'},
+                    'Age': {'N': '28'}
+                }
+            }
+        },
+        {
+            'PutRequest': {
+                'Item': {
+                    'UserID': {'S': 'user3'},
+                    'Timestamp': {'N': '1234567892'},
+                    'Name': {'S': 'Bob Smith'},
+                    'Age': {'N': '35'}
+                }
+            }
+        },
+        {
+            'DeleteRequest': {
+                'Key': {
+                    'UserID': {'S': '12345'},
+                    'Timestamp': {'N': '1234567890'}
+                }
+            }
+        }
+    ]
+}
+
+response = dynamodb.batch_write_item(RequestItems=request_items)
+print("Unprocessed items:", response.get('UnprocessedItems', {}))
