@@ -28,3 +28,9 @@ Sort Key - Range Key
 
 ## Improve performance of your query by:
 compressing , partitioninng and converting into columnar format (like parquet)
+
+## Upto 10 Petebyte tranfer
+snowball edge: there is no way to put in glacier. You need to place in other place and move it to glacier.  
+
+# for lifecycle transition
+you need to store for 30 days min
