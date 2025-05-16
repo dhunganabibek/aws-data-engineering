@@ -101,3 +101,6 @@ Event source - event originate
 Rule - pattern that matches events
 Target - Destination (Dynamodb can not be the target)
 
+## Storage class analysis
+only provides recommendations for Standard to Standard IA classes
+
