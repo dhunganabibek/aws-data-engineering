@@ -45,3 +45,6 @@ Kinesis Data Analytics: Real-time analytics on streaming data using SQL.
 
 ## Kinesis Firehose - auto managed
 can not be two source (data stream and  Kinesis Agent at a same time)
+
+## s3 VPC gateway endpoint
+connect s3 to vpc with out public internet
